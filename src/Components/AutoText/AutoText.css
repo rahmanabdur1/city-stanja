@@ -1,0 +1,33 @@
+.autoText {
+    height: 40px;
+    background-color: #ffe5e9;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.marquee {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    /* Adjust the duration as needed */
+}
+
+
+.autoText span {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #f08080;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Adjust the distance to control the scrolling speed */
+    }
+}
